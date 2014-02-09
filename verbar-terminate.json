@@ -1,0 +1,168 @@
+{
+  "state": "TERMINATE",
+  "bits": null,
+  "term": null,
+  "path": "business-0|business-1-5|business-2-0|business-3-0",
+  "highlights": false,
+  "codesAvailable": [
+    
+  ],
+  "selectedCodesList": [
+    
+  ],
+  "pathList": [
+    {
+      "title": "Bus. & Professions",
+      "fullFacet": "business-0",
+      "count": 0,
+      "codeRange": "1 - 25762",
+      "part": "business",
+      "partNumber": null,
+      "section": false,
+      "code": true
+    },
+    {
+      "title": "Real Estate",
+      "fullFacet": "business-0|business-1-5",
+      "count": 0,
+      "codeRange": "10000 - 11506",
+      "part": "Division",
+      "partNumber": "4",
+      "section": false,
+      "code": false
+    },
+    {
+      "title": "Licensing of Persons",
+      "fullFacet": "business-0|business-1-5|business-2-0",
+      "count": 0,
+      "codeRange": "10000 - 10580",
+      "part": "Part",
+      "partNumber": "1",
+      "section": false,
+      "code": false
+    },
+    {
+      "title": "General Provisions",
+      "fullFacet": "business-0|business-1-5|business-2-0|business-3-0",
+      "count": 0,
+      "codeRange": "10000 - 10035",
+      "part": "Chapter",
+      "partNumber": "1",
+      "section": true,
+      "code": false
+    }
+  ],
+  "subcodeList": [
+    
+  ],
+  "sectionTextList": [
+    {
+      "sectionNumber": "10000",
+      "text": "10000.  This part may be cited as the Real Estate Law."
+    },
+    {
+      "sectionNumber": "10001",
+      "text": "10001.  The definitions in this chapter apply to the provisions of\r\nthis part only and do not affect any other provisions of this code."
+    },
+    {
+      "sectionNumber": "10003",
+      "text": "10003.  \"Commissioner\" refers to the Real Estate Commissioner."
+    },
+    {
+      "sectionNumber": "10004",
+      "text": "10004.  \"Bureau\" means the Bureau of Real Estate in the Department\r\nof Consumer Affairs."
+    },
+    {
+      "sectionNumber": "10005",
+      "text": "10005.  Whenever the terms \"bureau,\" \"division,\" \"department,\"\r\n\"Department of Real Estate,\" \"State Real Estate Division,\" or \"Real\r\nEstate Division\" are used in this division, they mean the Bureau of\r\nReal Estate.\r\n   Whenever the terms \"Department of Real Estate,\" \" State Real\r\nEstate Division,\" or \" Real Estate Division\" are used in any other\r\nlaw, they mean the Bureau of Real Estate."
+    },
+    {
+      "sectionNumber": "10006",
+      "text": "10006.  \"Person\" includes corporation, company and firm."
+    },
+    {
+      "sectionNumber": "10007",
+      "text": "10007.  \"Provisions of this part relating to real estate\" refers to\r\nthe provisions of Chapters 1, 2, 3 and 6 of Part 1."
+    },
+    {
+      "sectionNumber": "10008",
+      "text": "10008.  \"Provisions of this part relating to business opportunity\r\nregulation\" refers to the provisions of Chapters 1, 2, and 6 of Part\r\n1."
+    },
+    {
+      "sectionNumber": "10008.5",
+      "text": "10008.5.  Solely with regard to any transaction involving the sale,\r\nlease, or exchange of a business opportunity occurring before, on, or\r\nafter the effective date of this section, this division shall not\r\napply to any person licensed at the time of the transaction as a\r\nsecurities broker or securities dealer under any law of this state or\r\nof the United States, or by any employee, officer, or agent of that\r\nperson while acting under the direction of, and within the scope of,\r\nhis or her employment with that person in connection with the\r\ntransaction.\r\n   As used in this section, \"any transaction involving the sale,\r\nlease, or exchange of a business opportunity\" does not include any of\r\nthe acts described in Section 10131 or Section 10131.2 if the\r\nsubstance of the transaction is to transfer, sell, lease, or exchange\r\nan interest in real property for the purpose of evading this part."
+    },
+    {
+      "sectionNumber": "10009.5",
+      "text": "10009.5.  \"Provisions of this part relating to mineral, oil and gas\r\nbrokerage\" refers to the provisions of Chapters 1, 2, 6 and 7, of\r\nPart 1."
+    },
+    {
+      "sectionNumber": "10010",
+      "text": "10010.  \"Provisions of this part relating to hearings\" refers to the\r\nprovisions of Article 3 of Chapter 2 of Part 1."
+    },
+    {
+      "sectionNumber": "10011",
+      "text": "10011.  \"Licensee,\" when used without modification, refers to a\r\nperson, whether broker or salesman, licensed under any of the\r\nprovisions of this part."
+    },
+    {
+      "sectionNumber": "10012",
+      "text": "10012.  \"Broker,\" when used without modification, refers to a person\r\nlicensed as a broker under any of the provisions of this part."
+    },
+    {
+      "sectionNumber": "10013",
+      "text": "10013.  \"Salesman,\" when used without modification, refers to a\r\nperson licensed as a saleman under any of the provisions of this\r\npart."
+    },
+    {
+      "sectionNumber": "10014",
+      "text": "10014.  \"Real estate licensee\" refers to a person, whether broker or\r\nsalesman, licensed under Chapter 3 of this part."
+    },
+    {
+      "sectionNumber": "10015",
+      "text": "10015.  \"Real estate broker\" refers to a person licensed as a broker\r\nunder Chapter 3 of this part."
+    },
+    {
+      "sectionNumber": "10016",
+      "text": "10016.  \"Real estate salesman\" refers to a person licensed as a\r\nsalesman under Chapter 3 of this part."
+    },
+    {
+      "sectionNumber": "10017",
+      "text": "10017.  Whenever the word salesman is used in this division, or in\r\nthe rules and regulations of the commissioner, it means salesperson.\r\nA licensee, however, may elect to refer to the licensed status as\r\nreal estate salesman, real estate saleswoman, or real estate\r\nsalesperson."
+    },
+    {
+      "sectionNumber": "10023",
+      "text": "10023.  \"Mineral, oil and gas licensee\" refers to a person licensed\r\nunder Chapter 7 (commencing with Section 10500) of this part."
+    },
+    {
+      "sectionNumber": "10024",
+      "text": "10024.  \"Mineral, oil and gas broker\" refers to a person licensed as\r\na broker under Chapter 7 of this part."
+    },
+    {
+      "sectionNumber": "10026",
+      "text": "10026.  (a) The term \"advance fee,\" as used in this part, is a fee,\r\nregardless of the form, that is claimed, demanded, charged, received,\r\nor collected by a licensee for services requiring a license, or for\r\na listing, as that term is defined in Section 10027, before fully\r\ncompleting the service the licensee contracted to perform or\r\nrepresented would be performed. Neither an advance fee nor the\r\nservices to be performed shall be separated or divided into\r\ncomponents for the purpose of avoiding the application of this\r\ndivision.\r\n   (b) For the purposes of this section, the term \"advance fee\" does\r\nnot include:\r\n   (1) \"Security\" as that term is used in Section 1950.5 of the Civil\r\nCode.\r\n   (2) A \"screening fee\" as that term is used in Section 1950.6 of\r\nthe Civil Code.\r\n   (3) A fee that is claimed, demanded, charged, received, or\r\ncollected for the purpose of advertising the sale, lease, or exchange\r\nof real estate, or of a business opportunity, in a newspaper of\r\ngeneral circulation, any other written publication, or through\r\nelectronic media comparable to any type of written publication,\r\nprovided that the electronic media or the publication is not under\r\nthe control or ownership of the broker.\r\n   (4) A fee earned for a specific service under a \"limited service\"\r\ncontract. For purposes of this section, a \"limited service\" contract\r\nis a written agreement for real estate services described in\r\nsubdivision (a), (b), or (c) of Section 10131, and pursuant to which\r\nsuch services are promoted, advertised, or presented as stand-alone\r\nservices, to be performed on a task-by-task basis, and for which\r\ncompensation is received as each separate, contracted-for task is\r\ncompleted. To qualify for this exclusion, all services performed\r\npursuant to the contract must be described in subdivision (a), (b),\r\nor (c) of Section 10131.\r\n   (c) A contract between a real estate broker and a principal that\r\nrequires payment of a commission to the broker after the contract is\r\nfully performed does not represent an agreement for an advance fee.\r\n   (d) This section does not exempt from regulation the charging or\r\ncollecting of a fee under Section 1950.5 or 1950.6 of the Civil Code,\r\nbut instead regulates fees that are not subject to those sections."
+    },
+    {
+      "sectionNumber": "10027",
+      "text": "10027.  The term \"listing\" as used in this part includes, but is not\r\nlimited to:\r\n   (a) The name or a list of the names, of the owners, landlords,\r\nexchangers, or lessors, or the location or locations, of property, or\r\nof an interest in property, offered for rent, sale, lease, or\r\nexchange.\r\n   (b) The name, or a list of the names, or the location or locations\r\nat which prospective or potential purchasers, buyers, lessees,\r\ntenants or exchangers of property may be found or contacted.\r\n   (c) An agreement by which a person who is engaged in the business\r\nof promoting the sale or lease of business opportunities or real\r\nestate agrees to render to an owner or lessee of such property any\r\nservices, to promote the sale or lease of said property.\r\n   (d) An agreement by which a person who is engaged in the business\r\nof finding, locating or promoting the sale or lease of business\r\nopportunities or real estate, agrees to circularize, notify or refer\r\nreal estate brokers or salesmen to said property which is offered for\r\nsale or lease."
+    },
+    {
+      "sectionNumber": "10028",
+      "text": "10028.  \"Trust deed\" or \"deed of trust\" as used in this part\r\nincludes \"mortgage.\""
+    },
+    {
+      "sectionNumber": "10029",
+      "text": "10029.  \"Real property sales contract\" as used in this part is an\r\nagreement wherein one party agrees to convey title to real property\r\nto another party upon the satisfaction of specified conditions set\r\nforth in the contract and which does not require conveyance of title\r\nwithin one year from the date of formation of the contract."
+    },
+    {
+      "sectionNumber": "10030",
+      "text": "10030.  As used in this part, the words \"business opportunity\" shall\r\ninclude the sale or lease of the business and goodwill of an\r\nexisting business enterprise or opportunity."
+    },
+    {
+      "sectionNumber": "10032",
+      "text": "10032.  (a) All obligations created under Section 10000, and\r\nfollowing, all regulations issued by the commissioner relating to\r\nreal estate salespersons, and all other obligations of brokers and\r\nreal estate salespersons to members of the public shall apply\r\nregardless of whether the real estate salesperson and the broker to\r\nwhom he or she is licensed have characterized their relationship as\r\none of \"independent contractor\" or of \"employer and employee.\"\r\n   (b) A real estate broker and a real estate salesperson licensed\r\nunder that broker may contract between themselves as independent\r\ncontractors or as employer and employee, for purposes of their legal\r\nrelationship with and obligations to each other. Characterization of\r\na relationship as either \"employer and employee\" or \"independent\r\ncontractor\" for statutory purposes, including, but not limited to,\r\nwithholding taxes on wages and for purposes of unemployment\r\ncompensation, shall be governed by Section 650 and Sections 13000 to\r\n13054, inclusive, of the Unemployment Insurance Code. For purposes of\r\nworkers compensation the characterization of the relationship shall\r\nbe governed by Section 3200, and following, of the Labor Code."
+    },
+    {
+      "sectionNumber": "10035",
+      "text": "10035.  Neither Section 10185 nor any other provision of this part\r\nwhich makes violation of this part a crime shall be construed to\r\npreclude application of any other criminal provision of the law of\r\nthis state to an act or omission which constitutes a violation of\r\nthis part."
+    }
+  ]
+}

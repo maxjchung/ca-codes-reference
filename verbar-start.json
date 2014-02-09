@@ -1,0 +1,36 @@
+{
+   "state":"START",
+   "bits":null,
+   "term":null,
+   "path":null,
+   "highlights":false,
+   "codesAvailable":[
+      {
+         "selected":false,
+         "title":"Bus. & Professions",
+         "fullFacet":"business-0"
+      },
+      {
+         "selected":false,
+         "title":"Civil",
+         "fullFacet":"civil-0"
+      },
+      {
+         "selected":false,
+         "title":"Civ. Procedure",
+         "fullFacet":"procedure-0"
+      }
+   ],
+   "selectedCodesList":[
+
+   ],
+   "pathList":[
+
+   ],
+   "subcodeList":[
+
+   ],
+   "sectionTextList":[
+
+   ]
+}

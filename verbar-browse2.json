@@ -1,0 +1,72 @@
+{
+  "state": "BROWSE",
+  "bits": null,
+  "term": null,
+  "path": "business-0|business-1-5",
+  "highlights": false,
+  "codesAvailable": [
+    
+  ],
+  "selectedCodesList": [
+    
+  ],
+  "pathList": [
+    {
+      "title": "Bus. & Professions",
+      "fullFacet": "business-0",
+      "count": 0,
+      "codeRange": "1 - 25762",
+      "part": "business",
+      "partNumber": null,
+      "section": false,
+      "code": true
+    },
+    {
+      "title": "Real Estate",
+      "fullFacet": "business-0|business-1-5",
+      "count": 0,
+      "codeRange": "10000 - 11506",
+      "part": "Division",
+      "partNumber": "4",
+      "section": false,
+      "code": false
+    }
+  ],
+  "subcodeList": [
+    {
+      "title": "Licensing of Persons",
+      "fullFacet": "business-0|business-1-5|business-2-0",
+      "count": 0,
+      "codeRange": "10000 - 10580",
+      "part": "Part",
+      "partNumber": "1"
+    },
+    {
+      "title": "Regulation of Transactions",
+      "fullFacet": "business-0|business-1-5|business-2-1",
+      "count": 0,
+      "codeRange": "11000 - 11288",
+      "part": "Part",
+      "partNumber": "2"
+    },
+    {
+      "title": "Licensing and Certification of Real Estate Appraisers",
+      "fullFacet": "business-0|business-1-5|business-2-2",
+      "count": 0,
+      "codeRange": "11300 - 11301",
+      "part": "Part",
+      "partNumber": "3"
+    },
+    {
+      "title": "Certified Common Interest Development Manager",
+      "fullFacet": "business-0|business-1-5|business-2-3",
+      "count": 0,
+      "codeRange": "11500 - 11506",
+      "part": "Part",
+      "partNumber": "4"
+    }
+  ],
+  "sectionTextList": [
+    
+  ]
+}
