@@ -1,0 +1,138 @@
+API Call Example
+----------------------------
+
+http://verbar.herokuapp.com/rest/json?path=business-0
+
+
+
+
+{
+  "state": "BROWSE",
+  "term": null,
+  "path": "business-0",
+  "highlights": false,
+  "codesAvailable": [
+    
+  ],
+  "pathList": [
+    {
+      "title": "Bus. & Professions",
+      "fullFacet": "business-0",
+      "count": 0,
+      "codeRange": "1 - 25762",
+      "part": "business",
+      "partNumber": null,
+      "section": false,
+      "code": true
+    }
+  ],
+  "subcodeList": [
+    {
+      "title": "General Provisions",
+      "fullFacet": "business-0|business-1-0",
+      "count": 0,
+      "codeRange": "1 - 40",
+      "part": null,
+      "partNumber": null
+    },
+    {
+      "title": "Department of Consumer Affairs",
+      "fullFacet": "business-0|business-1-1",
+      "count": 0,
+      "codeRange": "100 - 472.5",
+      "part": "Division",
+      "partNumber": "1"
+    },
+    {
+      "title": "Denial, Suspension and Revocation of Licenses",
+      "fullFacet": "business-0|business-1-2",
+      "count": 0,
+      "codeRange": "475 - 499",
+      "part": "Division",
+      "partNumber": "1.5"
+    },
+    {
+      "title": "Healing Arts",
+      "fullFacet": "business-0|business-1-3",
+      "count": 0,
+      "codeRange": "500 - 4999.129",
+      "part": "Division",
+      "partNumber": "2"
+    },
+    {
+      "title": "Professions and Vocations Generally",
+      "fullFacet": "business-0|business-1-4",
+      "count": 0,
+      "codeRange": "5000 - 9998.8",
+      "part": "Division",
+      "partNumber": "3"
+    },
+    {
+      "title": "Real Estate",
+      "fullFacet": "business-0|business-1-5",
+      "count": 0,
+      "codeRange": "10000 - 11506",
+      "part": "Division",
+      "partNumber": "4"
+    },
+    {
+      "title": "Weights and Measures",
+      "fullFacet": "business-0|business-1-6",
+      "count": 0,
+      "codeRange": "12001 - 13800",
+      "part": "Division",
+      "partNumber": "5"
+    },
+    {
+      "title": "Business Rights",
+      "fullFacet": "business-0|business-1-7",
+      "count": 0,
+      "codeRange": "14000 - 14704",
+      "part": "Division",
+      "partNumber": "6"
+    },
+    {
+      "title": "General Business Regulations",
+      "fullFacet": "business-0|business-1-8",
+      "count": 0,
+      "codeRange": "16000 - 18001",
+      "part": "Division",
+      "partNumber": "7"
+    },
+    {
+      "title": "Special Business Regulations",
+      "fullFacet": "business-0|business-1-9",
+      "count": 0,
+      "codeRange": "18400 - 22948.7",
+      "part": "Division",
+      "partNumber": "8"
+    },
+    {
+      "title": "Stop Tobacco Access to Kids Enforcement Act",
+      "fullFacet": "business-0|business-1-10",
+      "count": 0,
+      "codeRange": "22950 - 22963",
+      "part": "Division",
+      "partNumber": "8.5"
+    },
+    {
+      "title": "California Cigarette and Tobacco Products Licensing Act of 2003",
+      "fullFacet": "business-0|business-1-11",
+      "count": 0,
+      "codeRange": "22970 - 22991",
+      "part": "Division",
+      "partNumber": "8.6"
+    },
+    {
+      "title": "Alcoholic Beverages",
+      "fullFacet": "business-0|business-1-12",
+      "count": 0,
+      "codeRange": "23000 - 25762",
+      "part": "Division",
+      "partNumber": "9"
+    }
+  ],
+  "sectionTextList": [
+    
+  ]
+}
