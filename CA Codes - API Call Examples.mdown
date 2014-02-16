@@ -1,4 +1,26 @@
-API Call Example
+
+
+
+
+
+Query Parameters
+===========================================
+
+http://verbar.herokuapp.com/rest/json?path=business-0
+
+http://verbar.herokuapp.com/rest/json?path=business-0&term=knife
+
+http://verbar.herokuapp.com/rest/json?path=business-0&term=knife&highlights=true
+
+
+
+
+
+
+
+
+
+Selected path, no search term
 ----------------------------
 
 http://verbar.herokuapp.com/rest/json?path=business-0
