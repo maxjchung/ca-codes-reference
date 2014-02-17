@@ -1,5 +1,6 @@
 var CodeBrowser = (function () {
 
+	var $results = $('.results');
 
 	var ApiUrl = {
 		allCategories: 'http://verbar.herokuapp.com/rest/json',
@@ -64,17 +65,17 @@ var CodeBrowser = (function () {
 	function renderLinksFromCategories(categories) {
 		var i = 0;
 		for (i ; i < categories.length; i++) {
-			$('.results').append(getCategoryLink(categories[i].title, categories[i].fullFacet));
-			$('.results').append("<br/>");
+			$results.append(getCategoryLink(categories[i].title, categories[i].fullFacet));
+			$results.append("<br/>");
 		}
 	}
 
 	function showLoadingMessage() {
-		$('.results').append("Loading...");
+		$results.append("Loading...");
 	}
-	
+
 	function clearResultsArea() {
-		$('.results').empty();
+		$results.empty();
 	}
 
 	// Public interface
