@@ -2,7 +2,8 @@ var CodeBrowser = (function () {
 
 
 	var ApiUrl = {
-		allCategories: 'http://verbar.herokuapp.com/rest/json'
+		allCategories: 'http://verbar.herokuapp.com/rest/json',
+		singleCategory: 'http://verbar.herokuapp.com/rest/json?path='
 	}
 
 	// Private members
@@ -30,8 +31,7 @@ var CodeBrowser = (function () {
 
 
 	function getCategoryLink(text, category) {
-		var url = 'http://verbar.herokuapp.com/rest/json' + '?path=' + category;
-
+		var url = ApiUrl.singleCategory + category;
 
 		return $('<a>',{
 		    text: text,
@@ -53,7 +53,7 @@ var CodeBrowser = (function () {
 	function updateResultsList() {
 
 		var category = $(this).data('categoryPath');
-		var url = 'http://verbar.herokuapp.com/rest/json' + '?path=' + category;
+		var url = ApiUrl.singleCategory + category;
 
 		$('.results').empty();
 		$('.results').append("Loading...");
