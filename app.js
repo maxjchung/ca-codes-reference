@@ -56,8 +56,13 @@ var CodeBrowser = (function () {
 			url: url,
 			success: function(response) {
 				clearResultsArea();
-				var subcategories = getSubcategoriesFromJson(response);
-				renderLinksFromCategories(subcategories)
+				if(hasNoMoreSubcategories(response)) {
+					renderSectionTexts(response);
+				}
+				else {
+					var subcategories = getSubcategoriesFromJson(response);
+					renderLinksFromCategories(subcategories)
+				}
 			}
 		});
 	}
@@ -70,12 +75,25 @@ var CodeBrowser = (function () {
 		}
 	}
 
+	function renderSectionTexts(response) {
+		var sections = response.sectionTextList;
+
+		var i = 0;
+		for (i ; i<sections.length ; i++) {
+			$results.append($('<p>').text(sections[i].text));
+		}
+	}
+
 	function showLoadingMessage() {
 		$results.append("Loading...");
 	}
 
 	function clearResultsArea() {
 		$results.empty();
+	}
+
+	function hasNoMoreSubcategories(response) {
+		return 'TERMINATE' == response.state;
 	}
 
 	// Public interface
