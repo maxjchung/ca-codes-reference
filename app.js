@@ -16,15 +16,8 @@ var CodeBrowser = (function () {
 		$.ajax({
 			url: ApiUrl.allCategories,
 			success: function(response) {
-
 				var categories = getCategories(response);
-
-				var i = 0;
-				for (i ; i < categories.length; i++) {
-					$('.results').append(getCategoryLink(categories[i].title, categories[i].fullFacet));
-					$('.results').append("<br/>");
-				}
-				
+				renderLinksFromCategories(categories);
 			}
 		});
 	}
@@ -58,7 +51,6 @@ var CodeBrowser = (function () {
 		$('.results').empty();
 		$('.results').append("Loading...");
 
-
 		$.ajax({
 			url: url,
 			success: function(response) {
@@ -68,14 +60,17 @@ var CodeBrowser = (function () {
 				$('.results').empty();
 
 				var subcategories = getSubcategoriesFromJson(response);
-
-				var i = 0;
-				for (i ; i < subcategories.length; i++) {
-					$('.results').append(getCategoryLink(subcategories[i].title, subcategories[i].fullFacet));
-					$('.results').append("<br/>");
-				}
+				renderLinksFromCategories(subcategories)
 			}
 		});
+	}
+
+	function renderLinksFromCategories(categories) {
+		var i = 0;
+		for (i ; i < categories.length; i++) {
+			$('.results').append(getCategoryLink(categories[i].title, categories[i].fullFacet));
+			$('.results').append("<br/>");
+		}
 	}
 
 	// Public interface
