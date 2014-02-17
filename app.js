@@ -48,17 +48,13 @@ var CodeBrowser = (function () {
 		var category = $(this).data('categoryPath');
 		var url = ApiUrl.singleCategory + category;
 
-		$('.results').empty();
+		clearResultsArea();
 		$('.results').append("Loading...");
 
 		$.ajax({
 			url: url,
 			success: function(response) {
-
-				console.log(response);
-
-				$('.results').empty();
-
+				clearResultsArea();
 				var subcategories = getSubcategoriesFromJson(response);
 				renderLinksFromCategories(subcategories)
 			}
@@ -71,6 +67,10 @@ var CodeBrowser = (function () {
 			$('.results').append(getCategoryLink(categories[i].title, categories[i].fullFacet));
 			$('.results').append("<br/>");
 		}
+	}
+
+	function clearResultsArea() {
+		$('.results').empty();
 	}
 
 	// Public interface
