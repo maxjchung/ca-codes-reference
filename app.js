@@ -1,6 +1,10 @@
 var CodeBrowser = (function () {
 
 
+	var ApiUrl = {
+		allCategories: 'http://verbar.herokuapp.com/rest/json'
+	}
+
 	// Private members
 	function init() {
 		showAllCategories();
@@ -9,7 +13,7 @@ var CodeBrowser = (function () {
 	function showAllCategories() {
 
 		$.ajax({
-			url: 'http://verbar.herokuapp.com/rest/json',
+			url: ApiUrl.allCategories,
 			success: function(response) {
 
 				var categories = getCategories(response);
@@ -58,6 +62,8 @@ var CodeBrowser = (function () {
 		$.ajax({
 			url: url,
 			success: function(response) {
+
+				console.log(response);
 
 				$('.results').empty();
 
