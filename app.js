@@ -49,7 +49,7 @@ var CodeBrowser = (function () {
 		var url = ApiUrl.singleCategory + category;
 
 		clearResultsArea();
-		$('.results').append("Loading...");
+		showLoadingMessage();
 
 		$.ajax({
 			url: url,
@@ -69,6 +69,10 @@ var CodeBrowser = (function () {
 		}
 	}
 
+	function showLoadingMessage() {
+		$('.results').append("Loading...");
+	}
+	
 	function clearResultsArea() {
 		$('.results').empty();
 	}
