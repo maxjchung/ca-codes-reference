@@ -1,0 +1,24 @@
+
+
+.search-bar {
+	float: left;
+	margin-right: 1em;
+	font-size: 1.25em;
+	line-height: 3em;
+}
+
+.search-button {
+	background-color: #999;
+	color: #fff;
+	padding: 0.5em 1em;
+	font-size: 1.5em;
+	display: inline-block;
+}
+
+.results {
+	clear: left;
+	margin-top: 6em;
+	padding: 1em;
+	border: 1px solid #ccc;
+	width: 50%;
+}
