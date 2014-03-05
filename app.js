@@ -59,7 +59,6 @@ var CodeBrowser = (function () {
 	function renderResults(response) {
 
 		var isSearch = response.term ? response.term.length > 0 : false;
-		console.log('isSearch: ' + isSearch);
 
 		clearResultsArea();
 
