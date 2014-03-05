@@ -133,6 +133,12 @@ var CodeBrowser = (function () {
 
 	function initSearchControls() {
 		$searchButton.click(doSearch);
+
+		$searchTextbox.keyup(function () {
+			if(event.keyCode == 13) {
+	        	$searchButton.click();
+	    	}
+		});
 	}
 
 	function doSearch() {
