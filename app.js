@@ -1,15 +1,23 @@
 var CodeBrowser = (function () {
 
+	var currentCategoryPath;
+
 	var $results = $('.results');
+	
+	var $searchTextbox = $('.search-text');
+	var $searchButton = $('.search-button');
+
 
 	var ApiUrl = {
 		allCategories: 'http://verbar.herokuapp.com/rest/json?path=penal-0',
-		singleCategory: 'http://verbar.herokuapp.com/rest/json?path='
+		singleCategory: 'http://verbar.herokuapp.com/rest/json?path=',
+		base: 'http://verbar.herokuapp.com/rest/json?'
 	}
 
 	// Private members
 	function init() {
 		showAllCategories();
+		initSearchControls();
 	}
 
 	function showAllCategories() {
@@ -30,7 +38,11 @@ var CodeBrowser = (function () {
 		return $('<a>',{
 		    text: text,
 		    href: '#',
-		    click: updateResultsList
+		    click: function() {
+		    	var $clickedLink = $(this);
+		    	updateResultsList($clickedLink);
+		    	setCurrentCategoryPath(category);
+		    }
 		}).data('categoryPath', category);
 	}
 
@@ -44,9 +56,9 @@ var CodeBrowser = (function () {
 		return codes;
 	}
 
-	function updateResultsList() {
+	function updateResultsList($clickedLink) {
 
-		var category = $(this).data('categoryPath');
+		var category = $clickedLink.data('categoryPath');
 		var url = ApiUrl.singleCategory + category;
 
 		clearResultsArea();
@@ -94,6 +106,50 @@ var CodeBrowser = (function () {
 
 	function hasNoMoreSubcategories(response) {
 		return 'TERMINATE' == response.state;
+	}
+
+	function initSearchControls() {
+		$searchButton.click(doSearch);
+	}
+
+	function doSearch() {
+
+		var searchTerm = $searchTextbox.val();
+		var path = getCurrentCategoryPath();
+		var searchUrl = getSearchUrl(path, searchTerm);
+
+		// TODO: implement me
+		// TODO: implement me		
+		// TODO: implement me		
+	}
+
+	function getSearchUrl(fullFacet, searchTerm) {
+		return ApiUrl.base + "path=" + fullFacet + "&term=" + searchTerm;
+	}
+
+	function getSearchResults(searchUrl) {
+
+
+		$.ajax({
+			url: searchUrl,
+			success: function(response) {
+				clearResultsArea();
+
+				// Development only
+				$results.append(
+					$('<a>').href(searchUrl).text('searchUrl')
+				);
+
+			}
+		});
+	}
+
+	function getCurrentCategoryPath() {
+		return currentCategoryPath;
+	}
+
+	function setCurrentCategoryPath(path) {
+		currentCategoryPath = path;
 	}
 
 	// Public interface
