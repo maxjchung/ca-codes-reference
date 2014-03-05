@@ -21,13 +21,9 @@ var CodeBrowser = (function () {
 	}
 
 	function showAllCategories() {
-
 		$.ajax({
 			url: ApiUrl.allCategories,
-			success: function(response) {
-				var subcategories = getSubcategoriesFromJson(response);
-				renderLinksFromCategories(subcategories);
-			}
+			success: function(response) { renderResults(response); }
 		});
 	}
 
