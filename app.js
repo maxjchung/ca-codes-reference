@@ -56,6 +56,32 @@ var CodeBrowser = (function () {
 		return codes;
 	}
 
+	function renderResults(response) {
+
+		var isSearch = response.term ? response.term.length > 0 : false;
+		console.log('isSearch: ' + isSearch);
+
+		clearResultsArea();
+
+		if(hasNoMoreSubcategories(response)) {
+			renderSectionTexts(response);
+		}
+		else {
+			var subcategories = getSubcategoriesFromJson(response);
+			var numResults = subcategories.length;
+
+			if(isSearch) {
+				updateResultsHeadline("Showing " + numResults + " categories matching your search for '" + getSearchText() + "'")
+			}
+
+			renderLinksFromCategories(subcategories, isSearch)
+		}
+	}
+
+	function getSearchText() {
+		return $searchTextbox.val();
+	}
+
 	function updateResultsList($clickedLink) {
 
 		var category = $clickedLink.data('categoryPath');
@@ -66,22 +92,19 @@ var CodeBrowser = (function () {
 
 		$.ajax({
 			url: url,
-			success: function(response) {
-				clearResultsArea();
-				if(hasNoMoreSubcategories(response)) {
-					renderSectionTexts(response);
-				}
-				else {
-					var subcategories = getSubcategoriesFromJson(response);
-					renderLinksFromCategories(subcategories)
-				}
-			}
+			success: function(response) { renderResults(response) }
 		});
 	}
 
-	function renderLinksFromCategories(categories) {
+	function renderLinksFromCategories(categories, isSearch) {
 		var i = 0;
 		for (i ; i < categories.length; i++) {
+
+
+			if(isSearch) {
+				$results.append('(' + categories[i].count + ') ');
+			}
+
 			$results.append(getCategoryLink(categories[i].title, categories[i].fullFacet));
 			$results.append("<br/>");
 		}
@@ -118,30 +141,20 @@ var CodeBrowser = (function () {
 		var path = getCurrentCategoryPath();
 		var searchUrl = getSearchUrl(path, searchTerm);
 
-		// TODO: implement me
-		// TODO: implement me		
-		// TODO: implement me		
+
+		$.ajax({
+			url: searchUrl,
+			success: function(response) { renderResults(response); }
+		});
+	
+	}
+
+	function updateResultsHeadline(headline) {
+		$('.results-headline').html(headline);
 	}
 
 	function getSearchUrl(fullFacet, searchTerm) {
 		return ApiUrl.base + "path=" + fullFacet + "&term=" + searchTerm;
-	}
-
-	function getSearchResults(searchUrl) {
-
-
-		$.ajax({
-			url: searchUrl,
-			success: function(response) {
-				clearResultsArea();
-
-				// Development only
-				$results.append(
-					$('<a>').href(searchUrl).text('searchUrl')
-				);
-
-			}
-		});
 	}
 
 	function getCurrentCategoryPath() {
