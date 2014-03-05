@@ -3,7 +3,7 @@ var CodeBrowser = (function () {
 	var $results = $('.results');
 
 	var ApiUrl = {
-		allCategories: 'http://verbar.herokuapp.com/rest/json',
+		allCategories: 'http://verbar.herokuapp.com/rest/json?path=penal-0',
 		singleCategory: 'http://verbar.herokuapp.com/rest/json?path='
 	}
 
@@ -17,8 +17,8 @@ var CodeBrowser = (function () {
 		$.ajax({
 			url: ApiUrl.allCategories,
 			success: function(response) {
-				var categories = getCategories(response);
-				renderLinksFromCategories(categories);
+				var subcategories = getSubcategoriesFromJson(response);
+				renderLinksFromCategories(subcategories);
 			}
 		});
 	}
